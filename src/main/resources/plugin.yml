@@ -1,0 +1,12 @@
+name: VotingSystem
+version: 1
+main: me.huns.MineHaven.Hook
+author: Huns
+api-version: 1.18
+commands:
+  hvote:
+    usage: /hvote
+  hreloadconfig:
+    usage: /hreloadconfig
+  hcheckvote:
+    usage: /hcheckvote
