@@ -11,7 +11,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 
 public class ConfigReloadCommand implements CommandExecutor {
-    Plugin plugin = Bukkit.getPluginManager().getPlugin("HHub");
+    Plugin plugin = Bukkit.getPluginManager().getPlugin("Hook");
     Server s = Bukkit.getServer();
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {

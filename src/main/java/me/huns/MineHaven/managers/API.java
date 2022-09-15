@@ -14,7 +14,7 @@ public class API {
     public boolean voted(Player player) {
         boolean voted = false;
         try {
-            java.net.URL url = new URL("https://api.namemc.com/server/" + Hook.getInstance().getConfig().getString("ip") + "/likes" + player.getUniqueId().toString());
+            URL url = new URL("https://api.namemc.com/server/" + Hook.getInstance().getConfig().getString("ip") + "/likes?profile=" + player.getUniqueId().toString());
             URLConnection urlConnection = url.openConnection();
             InputStream inputStream = urlConnection.getInputStream();
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));

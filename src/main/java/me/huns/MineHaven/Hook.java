@@ -58,7 +58,7 @@ public final class Hook extends JavaPlugin {
 
     private void registerHooks() {
         getServer().getPluginManager().registerEvents(new HookHandler(), this);
-        new HookListener().runTaskTimerAsynchronously(this, 0L, 60L);
+        new HookListener().runTaskTimer(this, 0L, 60L);
     }
     private void saveData() {
         getConfig().set("known-voters", knownVoters);

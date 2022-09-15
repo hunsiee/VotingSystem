@@ -7,7 +7,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 
 public class HookListener extends BukkitRunnable {
-
     public void run() {
         for (Player online : Bukkit.getServer().getOnlinePlayers()) {
             if (Hook.getInstance().getApi().voted(online) && !Hook.getInstance().getKnownVoters().contains(online.getUniqueId().toString())) {
@@ -16,5 +15,4 @@ public class HookListener extends BukkitRunnable {
             }
         }
     }
-
 }

@@ -1,6 +1,7 @@
 ip: minemortal.org
 perform-commands:
   - 'lp user %player% parent add Apprentice'
+  - 'crate key give %player% vote 1'
 messages:
   no-permission: '&cNo permission.'
   player-voted: '&a%player% &ehas voted.'
