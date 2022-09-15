@@ -20,6 +20,7 @@ public class CheckVoteCommand implements CommandExecutor {
             sender.sendMessage(ChatColor.RED + "Usage: /" + commandLabel + " <player>");
             return true;
         }
+        @Deprecated
         OfflinePlayer offlinePlayer = Hook.getInstance().getServer().getOfflinePlayer(args[0]);
         if (HookAPI.playerVoted(offlinePlayer.getUniqueId())) {
             sender.sendMessage(Messages.PLAYER_VOTED.replace("%player%", offlinePlayer.getName()));
